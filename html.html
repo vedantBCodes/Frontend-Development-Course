@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML</title>
+    <style>
+      body{font-family: roboto,sans-serif;
+    font-size: 30px;
+    padding: 0px;
+    margin: 2px;
+    /* background-image: url(https://egeniq.com/wp-content/uploads/2022/07/frontend_webdeveloper.jpg); */
+    }
+    .heading{
+       height:250px;
+      text-align: center;
+        color:white;
+        border:2px solid black;
+        border-radius:30px;
+        font-size:70px;
+        /* padding-left:130px; */
+        padding-top:50px;
+        padding-bottom:50px;
+        /* padding-right:130px; */
+        position: sticky;
+        margin-top:0px;
+        margin-left:0px;
+        background-image: url(https://blog.openclassrooms.com/en/wp-content/uploads/sites/4/2018/03/web-develoment.jpg);
+        
+        background-size: cover;
+      }
+      .flex-container1 a{color:black;
+        text-decoration: none;}
+        .flex-container1 a:hover{color:red;
+                   padding:1px 10px;
+                   border-radius: 10px;
+                   background:#c7b173;;}
+      li a:hover{color:red;
+        text-decoration: underline;
+        padding:5px 10px;
+        border-radius: 10px;}
+      /* a:visited{color:blue;} */
+      .flex-container1{
+          margin-top: 2px;
+          background-color: brown;
+          border:2px solid black;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        border-radius:30px;
+        font-size: 20px;
+          display:flex;
+        flex-direction:column;
+      justify-content: space-between;}
+      /* summary:hover{background-color: blue;}
+      summary{padding:5px 10px;
+               border-radius: 10px;} */
+               /* *{font-size: 30px;} */
+               h1{font-size: 50px;}
+               iframe{border:5px solid black;
+                    border-radius: 15px;
+                  }
+          .flex-container3{display:flex;
+                           flex-direction: row;}
+                  div img{border-radius: 10px;}
+                  .center{margin:0px 20px;
+                         width:1200px;}
+                  /* .heading{width:1550px;} */
+          body{background-color: rgb(242, 237, 230);
+                padding:0px;}
+                  .flex-container1{              
+                  width:200px;
+                height:600px;
+                position: sticky;
+              }
+              .flex-container4{background-color: rgb(242, 237, 230)}
+
+                  /* body{background-image:url( https://www.tenacioustechies.com/wp-content/uploads/2021/02/Webdevelop2.jpg);} */
+                  .flex-container1{flex-basis: calc(20% - 2px);
+  min-width: calc(15% - 2px);
+  /* z-index: 999 !important; */
+  /* overflow-y: auto; */
+  height: calc(100vh - 50px);
+  top:0px;
+background-color: antiquewhite;}
+.flex-container5{display:flex;
+                flex-direction: row;}
+                .ex1{background-color:darkgray;
+                    border-radius: 10px;
+                  padding:2px;}
+                .ex2{background-color: antiquewhite;
+                 border-radius: 10px;}
+          hr{border:2px solid black;}
+          video{border:2px solid burlywood;
+               border-radius: 20px;}
+               /* center{display:block;} */
+          center h1{display:inline;
+            background-color:#dfd8e8;
+                    padding:0px 30px;
+                   border-radius: 10px;}
+          center h2{background-color:#c7b173;
+                    padding:0px 0px;
+                   border-radius: 10px;}     
+            
+               
+          </style>
+      </head>
+<body>
+          
+              <div class="heading">
+                <p> <marquee behavior="alternate" direction="">WEB4U LEARNING AREA</marquee> </p>
+              </div>
+              <div class="flex-container5">
+              <div class="flex-container1">
+                  <div><a href="web4U.html"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" width="20px" height="20px" alt="">Home</a></div>
+                    <div>
+                       <b><img src="htmllogo.png" alt="" width="20px" height="20px">HTML content</b>
+                        <ul>
+                          <li><a href="#zero">Intoduction to HTML</a></li>
+                          <li><a href="#first">elements and attributes</a></li>
+                          <li><a href="#second">List and tables</a></li>
+                          <li><a href="#third">Media elements and forms</a></li>
+                          <li><a href="#fourth">A mega project</a></li>
+                        </ul>
+                      </div>
+                      <div><a href="css.html" ><img src="csslogo.png" alt="" width="20px" height="20px">CSS</a></div>
+                      <div><a href="js.html" ><img src="js.png" alt="" width="40px" height="20px">JS</a></div>
+                      <div><a href="log_in.html" >Log In</a></div>
+                              
+              </div>   <br>
+              <div class="flex-container4">
+              <div class="center">
+              <a name="zero"> <br>
+                <center><h1>Introduction to HTML</h1></center>  <br>
+                HTML is the standard markup language for creating Web pages. <br> <br>
+
+<b>What is HTML?</b> <br>
+&#x2022;HTML stands for Hyper Text Markup Language <br>
+&#x2022;HTML is the standard markup language for creating Web pages <br>
+&#x2022;HTML describes the structure of a Web page <br>
+&#x2022;HTML consists of a series of elements <br>
+&#x2022;HTML elements tell the browser how to display the content <br>
+&#x2022;HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc. <br> <hr>
+<h2>A Simple HTML Document</h2>
+<div  class="ex1">
+<b>Example</b>
+<div class="ex2">
+<pre>
+&lt;!DOCTYPE html&gt;
+<b> &lt;html&gt;</b>
+<b> &lt;head&gt;</b>
+<b> &lt;title&gt;</b>Page Title<b> &lt;title&gt;</b>
+<b> &lt;/head&gt;</b>
+<b> &lt;body&gt;</b>
+  <b> &lt;h1&gt;</b>My First Heading<b> &lt;/h1&gt;</b>
+  <b> &lt;p&gt;</b>My first paragraph.<b> &lt;/p&gt;</b>
+<b> &lt;/body&gt;</b>
+<b> &lt;/html&gt;</b>
+</pre> </div></div> <hr>
+<h2>Example Explained</h2>
+The <b> &lt;!DOCTYPE html&gt;</b> declaration defines that this document is an HTML5 document <br>
+The <b> &lt;html&gt;</b> element is the root element of an HTML page <br>
+The <b> &lt;head&gt;</b> element contains meta information about the HTML page <br>
+The <b> &lt;title&gt;</b> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) <br>
+The <b> &lt;body&gt;</b> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <br>
+The <b> &lt;h1&gt;</b> element defines a large heading <br>
+The <b> &lt;p&gt;</b> element defines a paragraph <br> <hr>
+<b>What is an HTML Element?</b> <br> <br>
+An HTML element is defined by a start tag, some content, and an end tag: <br>
+
+<b> &lt;tagname&gt;</b> Content goes here... <b> &lt;tagname&gt;</b>
+The HTML element is everything from the start tag to the end tag: <br> <br>
+
+<b> &lt;h1&gt;</b>My First Heading<b> &lt;/h1&gt;</b> <br>
+<b> &lt;p&gt;</b>My first paragraph.<b> &lt;/p&gt;</b> <br> <br>
+ <center><iframe width="760" height="360" src="https://www.youtube.com/embed/PJAWLl92J3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> 
+              </a>  <hr>
+              <a name="first">
+                  <center><h1>Elements and Attributes</h1></center>
+                  <center><h2>HTML Elements</h2></center> 
+                 <p> In this article, we will know the HTML Elements, along with understanding the various available elements & their syntax through the examples. An HTML element is the collection of start and end tags with the content inserted in between them.</p>
+                 <div class="flex-container3">
+                  <div>                
+                    Supported Tags: HTML Elements supports almost all HTML Tags. <br> 
+                    
+                    HTML Element: The HTML element consist of 3 parts. <br>
+                    i) Opening tag: It is used to tell the browser where the content material starts. <br>
+                    
+                    ii)Closing tag: It is used to tell the browser where the content material ends. <br>
+                    
+                    iii)Content: It is the actual content material inside the opening and closing tag. <br></div>
+                    <div>
+                      <img src="https://wallpaperaccess.com/full/1631871.jpg" width="300px" height="300px"  alt="">
+                    </div>
+                  </div>
+                  <div> <hr>
+                    <center><h2>HTML Attributes</h2></center>
+                    
+                  HTML attributes provide additional information about HTML elements. <br> <br>
+
+                    <b>HTML Attributes</b> <br> <br>
+                    &#x2022;All HTML elements can have attributes <br>
+                    &#x2022;Attributes provide additional information about elements <br>
+                    &#x2022;Attributes are always specified in the start tag <br>
+                    &#x2022;Attributes usually come in name/value pairs like: name="value" <br> <br> <br>
+                    <b>The href Attribute</b> <br> <br>
+                    The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: <br>
+                     <div class="ex1"> <div class="ex2"> <pre>&lt;a href&#61;&quot;www.web4u.com&quot;&gt;Visit the web4u &lt;/a&gt;</pre> </div> </div> <br>
+                      <center><iframe width="780" height="380" src="https://www.youtube.com/embed/Rek0NWPCNOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                  </div> <hr>
+                  <a name="second">
+                    <center><h1>List and Tables</h1></center>
+                    <center><h2>List elements</h2></center>
+                    In this article, we will know the HTML List, along with understanding its types, and various ways to implement them, through the example. <br>
+
+                  A list is a record of short pieces of related information or used to display the data or any information on web pages in the ordered or unordered form. For instance, to purchase the items, we need to prepare a list that can either be ordered or unordered list which helps us to organize the data & easy to find the item. Please refer to the HTML list type Attribute article for the various types of attributes that can be used with the ordered & unordered list. <br> <br>
+                  <hr>
+                  &#x2605;<b>HTML Unordered List:</b> An unordered list starts with the “ul” tag. Each list item starts with the “li” tag. The list items are marked with bullets i.e small black circles by default. <br> <br>
+                  <b>Syntax:</b> <br>
+                  <div class="ex1"> <div class="ex2">
+                  <pre>&lt;ul&gt; list of items &lt;/ul&gt;</pre></div></div> <hr>
+
+                  <b>Attribute:</b> This tag contains two attributes which are listed below: <br> <br>
+                  
+                  &#x2022;<b>compact:</b> It will render the list smaller. <br>
+                  &#x2022;<b>type:</b> It specifies which kind of marker is used in the list. <br> <br>
+                  <div  class="ex1"><div  class="ex2"><b>Note:</b> The ul attributes are not supported by HTML5 </div></div><br>
+                  <br> <hr>
+                  &#x2605;<b>HTML Ordered List:</b> An ordered list starts with the “ol” tag. Each list item starts with the “li” tag. The list items are marked with numbers by default. <br> <br>
+                
+
+                 <b>Syntax:</b> <br>
+                 <div class="ex1"> <div class="ex2">
+ <pre>&lt;ol&gt;
+  &lt;li&gt;Item1&lt;/li&gt;
+  &lt;li&gt;Item2&lt;/li&gt;
+  &lt;li&gt;Item3&lt;/li&gt;
+&lt;/ol&gt;</pre> </div></div> <hr>
+<b>Attributes:</b> <br> <br>
+
+&#x2022;<b>compact:</b> It defines the list should be compacted (compact attribute is not supported in HTML5. Use CSS instead.). <br>
+&#x2022;<b>reversed:</b> It defines that the order will be descending. <br>
+&#x2022;<b>start:</b> It defines from which number or alphabet the order will start. <br>
+&#x2022;<b>type:</b> It defines which type(1, A, a, I, and i) of the order you want in your list of numeric, alphabetic, or roman numbers. <br>  <hr>
+                <center><h2>HTML Table</h2></center>
+                In this article, we will know the HTML Table, various ways to implement it, & will also understand its usage through the examples. HTML Table is an arrangement of data in rows and columns, or possibly in a more complex structure. Tables are widely used in communication, research, and data analysis. Tables are useful for various tasks such as presenting text information and numerical data. It can be used to compare two or more items in the tabular form layout. Tables are used to create databases. <br> <br> <hr>
+
+                &#x2605;<b>Defining Tables in HTML:</b> An HTML table is defined with the “table” tag. Each table row is defined with the “tr” tag. A table header is defined with the “th” tag. By default, table headings are bold and centered. A table data/cell is defined with the “td” tag. <br> <br> <hr>
+                &#x2605;<b>Adding a border to an HTML Table:</b> A border is set using the CSS border property. If you do not specify a border for the table, it will be displayed without borders. <br> <br> <br>
+<center><img src="https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-16-at-3.54.43-PM.png" alt=""></center> <br> <hr>
+&#x2605;<b>Adding Collapsed Borders in an HTML Table:</b> For borders to collapse into one border, add the CSS border-collapse property. <br> <br> <br>
+<center><img src="https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-16-at-3.55.29-PM.png" alt=""></center> <br> <hr>
+&#x2605;<b>Adding Border Spacing in an HTML Table:</b> Border spacing specifies the space between the cells. To set the border-spacing for a table, we must use the CSS border-spacing property. <br> <br> <br>
+<center><img src="https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-16-at-3.43.18-PM.png" alt=""></center> <br> <hr>
+<center><iframe width="780" height="390" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+              </a> <hr>
+              <a name="third">
+                <center><h1>Media elements and forms</h1></center>
+                <center><h2>Media elements</h2></center>
+                HTML5 introduced 5 most popular media element tags i.e.<b>&lt;audio&gt;</b>,<b>&lt;video&gt;</b>,<b>&lt;source&gt;</b>,<b>&lt;embed&gt;</b>,<b>&lt;track&gt;</b> . This media element tags changed the entire development using HTML. <br>
+
+                  In this article, you will get to know about these five media element tags briefly. <br>
+                  
+                 <b> Media Tags:</b> <br> <br>
+                  
+                 &#x2022;<b>&lt;audio&gt;</b>: It is an inline element that is used to embed sound files into a web page. <br> <br>
+                 &#x2022;<b>&lt;video&gt;</b>:  It is used to embed video files into a web page. <br> <br>
+                 &#x2022;<b>&lt;source&gt;</b>: It is used to attach multimedia files like audio, video, and pictures. <br> <br>
+                 &#x2022;<b>&lt;embed&gt;</b>: It is used for embedding external applications which are generally multimedia content like audio or video into an HTML document. <br> <br>
+                  &#x2022;<b>&lt;track&gt;</b>:  It specifies text tracks for media components audio and video. <br> <br> <hr>
+                  &#x2605;<b>&lt;audio&gt; tag:</b>: It is a useful tag if you want to add audio such as songs, or any sound files into your webpage. <br> <br>
+                  <b>Syntax:</b> <br>
+                  <div class="ex1"> <div class="ex2">
+                  <pre>&lt;audio&gt;<br>&lt;source src="sample.mp3" type="audio/mpeg"&gt; <br>&lt;/audio&gt;</pre></div></div> <br> <hr> <br>
+                  &#x2605;<b>&lt;video&gt;tag:</b>It is a standard way to embed a video into your web page. <br> <br>
+
+                 <b>Syntax:</b> <br>
+                 <div class="ex1"> <div class="ex2">
+                 <pre> &lt;video src="" controls&gt;   &lt;/video&gt;</pre> </div></div><br> <br> <hr>
+                 <center><h2>HTML Forms</h2></center>
+                 &#8594;An HTML form is used to collect user input. The user input is most often sent to a server for processing. <br> <br>
+                 &#x2022;<b>The <b>&lt;form&gt;</b> Element</b> <br> <br>
+                 &#8594;The HTML <b>&lt;form&gt;</b> element is used to create an HTML form for user input: <br>
+                 &#8594;The <b>&lt;form&gt;</b> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. <br>
+
+                 &#8594;All the different form elements are covered in this chapter: HTML Form Elements. <br> <br>
+                      
+                 &#x2022;<b>The &lt;input&gt; Element</b> <br>
+                 &#8594;The HTML <b>&lt;input&gt;</b> element is the most used form element. <br>
+                      
+                 &#8594;An <b>&lt;input&gt;</b> element can be displayed in many ways, depending on the type attribute. <br> <hr> 
+                   <h1>&#x2605;Text Fields</h1>
+                      &#8594;The<b>&lt;input type="text"&gt;</b> defines a single-line input field for text input. <br> <br>  <hr><br>
+                      <h1>&#x2605;The &lt;label&gt; Element</h1> 
+                      &#8594;Notice the use of the <label> element in the example above. <br> <br>
+                        
+                        &#8594;The <b>&lt;label&gt;</b> tag defines a label for many form elements. <br>
+                        
+                        &#8594;The <b>&lt;label&gt;</b> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. <br>
+                        
+                        &#8594;The <b>&lt;label&gt;</b> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <b>&lt;label&gt;</b> element, it toggles the radio button/checkbox. <br> <br>
+                        
+                        &#8594;The for attribute of the <b>&lt;label&gt;</b> tag should be equal to the id attribute of the <b>&lt;input&gt;</b> element to bind them together. <br> <hr>
+                         <h1>&#x2605;Radio Buttons</h1>
+                       <pre>The<b>&lt;input type="radio"&gt;</b> defines a radio button.</pre> 
+                       &#8594;Radio buttons let a user select ONE of a limited number of choices. <br> <hr>
+                       <h1>&#x2605;Checkboxes</h1>
+                       <pre>The<b>&lt;input type="checkbox"&gt;</b> defines a checkbox.</pre> 
+                       &#8594;Checkboxes let a user select ZERO or MORE options of a limited number of choices. <br> <hr>
+                       <h1>&#x2605;The Submit Button</h1>
+                       <pre>The<b>&lt;input type="submit"&gt;</b> defines a button for submitting the form to a form-handler.</pre> 
+                       &#8594;The form-handler is typically a file on the server with a script for processing input data. <br>
+
+                       &#8594;The form-handler is specified in the form's action attribute. <br> <br>
+                       <center><iframe width="780" height="390" src="https://www.youtube.com/embed/jRAZlTEZi9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> <br> <hr>
+                       <a name="fourth">
+                       <center><h1>A Mega Project</h1></center> <br>
+                       <center><iframe width="780" height="390" src="https://www.youtube.com/embed/61ppyY5rUB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> </a> <hr>
+                      </a></div></div> </div>
+</body>
+</html>

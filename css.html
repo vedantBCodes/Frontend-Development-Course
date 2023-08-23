@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="web4u.css">
+    </head>
+<body>
+        <div class="heading">
+          <p> <marquee behavior="alternate" direction="">WEB4U LEARNING AREA</marquee> </p>
+        </div>
+        <div class="flex-container5">
+        <div class="flex-container1">
+            <div><a href="web4U.html"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" width="20px" height="20px" alt="">Home</a></div>
+            <div><a href="html.html"><img src="htmllogo.png" alt="" width="20px" height="20px">HTML</a></div>
+              <div>
+                  <b><img src="csslogo.png" alt="" width="20px" height="20px">CSS content</b>
+                  <ul>
+                    <li><a href="#zero">CSS Introduction</a></li>
+                    <li><a href="#first">Selectors</a></li>
+                    <li><a href="#third">Box model</a></li>
+                    <li><a href="#fourth">Flexbox</a></li>
+                    <li><a href="#fifth">Float and Position Property</a></li>
+                    <ul>
+                        <li>float</li>
+                        <ul>
+                            <li><a href="#right">right</a></li>
+                            <li><a href="#left">left</a></li>
+                            <li><a href="#none">none</a></li>
+                        </ul>
+                        <li>position</li>
+                        <ul>
+                            <li> <a href="#static"> static</a></li>
+                            <li><a href="#relative">relative</a></li>
+                            <li><a href="#fixed">fixed</a></li>
+                            <li><a href="#absolute">absolute</a></li>
+                            <li><a href="#sticky">sticky</a></li>
+                        </ul>
+                    </ul> 
+                    <li><a href="#sixth">Adding CSS in Mega Project</a></li>
+                  </ul>
+                </div>
+                
+                <div><a href="js.html" ><img src="js.png" alt="" width="40px" height="20px">JS</a></div>
+                <div><a href="log_in.html" ><img src="login.png" alt="" width="20px" height="20px">Log In</a></div>
+                          
+        </div>  
+        <div class="flex-container4">  
+          <!-- <div class="center"> -->
+        <a name="zero">
+            <center><h1>CSS Introduction</h1></center> <br>
+            &#8594; CSS is the language we use to style a Web page. <br> <br>
+
+<b>&#x2605;What is CSS?</b> <br> <br>
+&#8594;CSS stands for Cascading Style Sheets. <br>
+&#8594;CSS describes how HTML elements are to be displayed on screen, paper, or in other media. <br>
+&#8594;CSS saves a lot of work. It can control the layout of multiple web pages all at once. <br>
+&#8594;External stylesheets are stored in CSS files. <br> <br> <hr>
+<b>&#x2605;Why Use CSS?</b> <br> <br>
+&#8594; CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. <br> <br>
+<div class="ex1"> 
+<b>Example</b> <br>
+<div class="ex2">
+<pre>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</pre></div></div> <hr>
+<b>&#x2605;CSS Solved a Big Problem</b> <br> <br>
+&#8594;HTML was NEVER intended to contain tags for formatting a web page! <br>
+
+&#8594;HTML was created to describe the content of a web page, like: <br> <br>
+
+<b>&lt;h1&gt;This is a heading&lt;/h1&gt;</b> <br> <br>
+
+<b>&lt;p&gt;This is a paragraph.&lt;/p&gt;</b> <br> <br>
+
+&#8594;When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. <br>Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.<br>
+
+&#8594;To solve this problem, the World Wide Web Consortium (W3C) created CSS. <br>
+
+&#8594;CSS removed the style formatting from the HTML page! <br> <br> <hr>
+<b>&#x2605;CSS Saves a Lot of Work!</b> <br> <br>
+&#8594;The style definitions are normally saved in external .css files. <br>
+
+&#8594;With an external stylesheet file, you can change the look of an entire website by changing just one file! <br> <br>
+<center><iframe width="760" height="360" src="https://www.youtube.com/embed/6vbgZnQrpbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </a> <hr>
+        <a name="first">
+            <center><h1>CSS Selectors</h1></center> <br>
+            &#8594; A CSS selector selects the HTML element(s) you want to style. <br>
+
+
+            &#8594;CSS selectors are used to "find" (or select) the HTML elements you want to style. <br> <br>
+
+            &#x2022;We can divide CSS selectors into five categories: <br> 
+<ol>
+    <li><b>Simple selectors</b> (select elements based on name, id, class)</li>
+    <li><b>Combinator selectors</b> (select elements based on a specific relationship between them)</li>
+    <li><b>Pseudo-class selectors</b> (select elements based on a certain state)</li>
+    <li><b>Pseudo-elements selectors</b> (select and style a part of an element)</li>
+    <li><b>Attribute selectors</b> (select elements based on an attribute or attribute value)</li>
+</ol>
+&#8594;This page will explain the most basic CSS selectors. <br> <hr>
+<h2>&#x2605;The CSS element Selector</h2>
+&#8594;The element selector selects HTML elements based on the element name. <br> <br>
+<b>Example</b> <br> <br>
+Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color: <br> 
+<div class="ex1"><div class="ex2">
+<pre>
+    p {
+        text-align: center;
+        color: red;
+      }
+</pre></div></div> <hr>
+<h2>&#x2605;The CSS id Selector</h2>
+&#8594;The id selector uses the id attribute of an HTML element to select a specific element. <br>
+
+&#8594;The id of an element is unique within a page, so the id selector is used to select one unique element! <br>
+
+&#8594;To select an element with a specific id, write a hash (#) character, followed by the id of the element. <br> <br>
+
+<b>Example</b> <br> <br>
+The CSS rule below will be applied to the HTML element with id="para1":  <br>
+<div class="ex1"><div class="ex2">
+<pre>
+#para1 {
+  text-align: center;
+  color: red;
+}
+</pre></div></div> <hr>
+<h2>&#x2605;The CSS class Selector</h2>
+&#8594;The class selector selects HTML elements with a specific class attribute. <br>
+
+&#8594;To select elements with a specific class, write a period (.) character, followed by the class name. <br> <br>
+
+<b>Example</b> <br> <br>
+In this example all HTML elements with class="center" will be red and center-aligned: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+.center {
+  text-align: center;
+  color: red;
+}
+</pre></div></div> <hr>
+<h2>&#x2605;The CSS Universal Selector</h2>
+&#8594;The universal selector (*) selects all HTML elements on the page. <br> <br>
+
+<b>Example</b><br> <br>
+The CSS rule below will affect every HTML element on the page: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+* {
+  text-align: center;
+  color: blue;
+}
+</pre></div></div> <hr>
+<h2>&#x2605;The CSS Grouping Selector</h2>
+&#8594;The grouping selector selects all the HTML elements with the same style definitions. <br>
+
+&#8594;Look at the following CSS code (the h1, h2, and p elements have the same style definitions): <br>
+<div class="ex1"><div class="ex2">
+<pre>
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+</pre></div></div>
+
+&#8594;It will be better to group the selectors, to minimize the code. <br>
+
+&#8594;To group selectors, separate each selector with a comma. <br> <br>
+
+<b>Example</b> <br> <br>
+In this example we have grouped the selectors from the code above: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+</pre></div></div> <hr>
+<center><iframe width="780" height="380" src="https://www.youtube.com/embed/sqJ6xZ9mUwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+</a> <hr>
+<a name="third">
+<center><h1>The CSS Box Model</h1></center> <br>
+&#8594;In CSS, the term "box model" is used when talking about design and layout. <br>
+
+&#8594;The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model: <br>
+<center><img src="https://iq.opengenus.org/content/images/2020/03/css_box_model.png" width="700px" height="400px"  alt=""></center> <br>
+<b>Explanation of the different parts:</b> <br> <br>
+
+&#x2022;<b>Content</b>- The content of the box, where text and images appear <br>
+&#x2022;<b>Padding</b> - Clears an area around the content. The padding is transparent <br>
+&#x2022;<b>Border</b>- A border that goes around the padding and content <br>
+&#x2022;<b>Margin</b>- Clears an area outside the border. The margin is transparent <br> <br>
+The box model allows us to add a border around elements, and to define space between elements. <br> <br>
+
+<b>Example</b> <br> <br>
+Demonstration of the box model: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+</pre></div></div> <hr>
+<h1>Width and Height of an Element</h1>
+&#8594;In order to set the width and height of an element correctly in all browsers, you need to know how the box model works. <br>
+
+&#x2022;<b>Important:</b> When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins. <br> <br>
+<b>Example</b> <br> <br>
+This &lt;div&gt; element will have a total width of 350px: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</pre></div></div>
+</a> <hr>
+<a name="fourth">
+  <center><h1>Flexbox</h1></center>
+  &#x2022;Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals. <br> <br> <hr>
+  <b>&#x2605;The flex model</b> <br> <br>
+      When elements are laid out as flex items, they are laid out along two axes: <br> <br>
+  <center><img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox/flex_terms.png" alt=""></center> <br>
+  &#x2022;The main axis is the axis running in the direction the flex items are laid out in (for example, as rows across the page, or columns down the page.) The start and end of this axis are called the main start and main end. <br>
+  &#x2022;The cross axis is the axis running perpendicular to the direction the flex items are laid out in. The start and end of this axis are called the cross start and cross end. <br>
+  &#x2022;The parent element that has display: flex set on it (the &lt;section&gt; in our example) is called the flex container. <br>
+  &#x2022;The items laid out as flexible boxes inside the flex container are called flex items (the &lt;article&gt; elements in our example). <br> <br> <hr>
+  <b>&#x2605;Columns or rows?</b> <br> <br>
+  &#x2022;Flexbox provides a property called flex-direction that specifies which direction the main axis runs (which direction the flexbox children are laid out in). By default this is set to row, which causes them to be laid out in a row in the direction your browser's default language works in (left to right, in the case of an English browser). <br>
+
+  &#x2022;Try adding the following declaration to your &lt;section&gt; rule: <br> <br>
+  <div class="ex1"><div class="ex2">
+flex-direction: column; </div></div><br> <br>
+
+&#x2022;You'll see that this puts the items back in a column layout, much like they were before we added any CSS. Before you move on, delete this declaration from your example.  <br> <br>
+
+<div class="ex1"><div class="ex2">
+  &#x2022;Note: You can also lay out flex items in a reverse direction using the row-reverse and column-reverse values. Experiment with these values too! </div></div><br> <br> <hr>
+
+<b>&#x2605;Wrapping</b> <br> <br>
+&#x2022;One issue that arises when you have a fixed width or height in your layout is that eventually your flexbox children will overflow their container, breaking the layout. Have a look at our flexbox-wrap0.html example and try viewing it live (take a local copy of this file now if you want to follow along with this example): <br> <br>
+<div class="ex1"><div class="ex2">flex-wrap: wrap;</div></div> <br> <br>        
+</a>
+<a name="fifth">
+    <center><h1>Float and Position</h1></center>
+    <center><h2>Float Property</h2></center>
+    <h1>&#x2605;CSS Layout - float and clear</h1>
+    &#8594;The CSS <b>float</b> property specifies how an element should float. <br>
+
+    &#8594;The CSS <b>clear</b> property specifies what elements can float beside the cleared element and on which side. <br> <hr>
+
+<h2>&#x2605; float Property</h2>
+&#8594;The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. <br>
+&#8594;The float property can have one of the following values: <br> <br>
+<div class="hoverit">
+
+&#x2022;<a href="#left">left</a></b> - The element floats to the left of its container. <br>
+&#x2022;<a href="#right">right</a></b> - The element floats to the right of its container. <br>
+&#x2022;<a href="#none">none</a></b> - The element does not float (will be displayed just where it occurs in the text). This is default. <br> <br> </div><hr>
+<a name="right"><b>Example - float: right;</b> <br>
+&#8594;The following example specifies that an image should float to the right in a text: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+img {
+  float: right;
+}
+</pre></div></div> <hr> <br>
+</a>
+<a name="left"><b>Example - float: left;</b> <br>
+&#8594;The following example specifies that an image should float to the left in a text: <br>
+<div class="ex1"><div class="ex2">
+<pre>
+img {
+    float: left;
+  }
+</pre></div></div> <hr> <br>
+</a>
+<a name="none">
+<b>Example - No float</b> <br>
+&#8594;In the following example the image will be displayed just where it occurs in the text (float: none;): <br>
+<div class="ex1"><div class="ex2">
+<pre>
+img {
+    float: none;
+  }
+</pre></div></div> <hr> <br>
+</a>
+<center><h2>position property</h2></center>
+<h1>CSS Layout - The position Property</h1>
+&#8594;The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+ <hr>
+<h2>&#x2605;The position Property</h2>
+&#8594;The position property specifies the type of positioning method used for an element. <br> <br>
+
+&#8594;There are five different position values: <br>
+<div class="hoverit">
+<ul>
+    <li> <a href="#static">static</a> </li>
+    <li><a href="#relative">relative</a></li>
+    <li><a href="#fixed">fixed</a></li>
+    <li><a href="#absolute">absolute</a></li>
+    <li><a href="#sticky">sticky</a></li>
+</ul> </div><br>
+&#8594;Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value. <hr> <br>
+<a name="static">
+<b>&#x2605;position: static;</b> <br>
+&#8594;HTML elements are positioned static by default. <br>
+
+&#8594;Static positioned elements are not affected by the top, bottom, left, and right properties. <br>
+
+&#8594;An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page: <br>
+
+&#8594;This &lt;div&gt; element has position: static; <br>
+&#8594;Here is the CSS that is used: <br>
+<div class="ex1">
+<b>Example</b> <div class="ex2"><br>
+<pre>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+</pre></div></div> <hr>
+</a>
+<a name="relative">
+<b>&#x2605;position: relative;</b> <br>
+&#8594;An element with position: relative; is positioned relative to its normal position. <br>
+
+&#8594;Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. <br>
+
+&#8594;This  &lt;div&gt; element has position: relative; <br>
+&#8594;Here is the CSS that is used: <br>
+<div class="ex1">
+<b>Example</b> <br>
+<div class="ex2">
+<pre>
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+</pre></div></div> <hr>
+</a>
+<a name="fixed">
+<b>&#x2605;position: fixed;</b>
+&#8594;An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. <br>
+
+&#8594;A fixed element does not leave a gap in the page where it would normally have been located. <br>
+
+&#x2022;Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used: <br>
+<div class="ex1">
+<b>Example</b> <div class="ex2"><br>
+<pre>
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+</pre></div></div>
+&#8594;This &lt;div&gt; element has position: fixed; <br>
+</a> <hr>
+<a name="absolute">
+<b>&#x2605;position: absolute;</b> <br>
+&#8594;An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). <br>
+
+&#8594;However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. <br>
+
+<div class="ex1"><div class="ex2">&#x2022;Note: Absolute positioned elements are removed from the normal flow, and can overlap elements </div></div><br>
+<div class="ex1">
+<b>Example</b> <br>
+<div class="ex2">
+<pre>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+</pre></div></div> <hr></a>
+<a name="sticky">
+<b>&#x2605;position: sticky;</b> <br>
+&#8594;An element with position: sticky; is positioned based on the user's scroll position. <br>
+
+&#8594;A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). <br> 
+<div class="ex1">
+<b>Example</b> <br>
+<div class="ex2">
+<pre>
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+</pre></div></div>
+</a> 
+<center><iframe width="760" height="360" src="https://www.youtube.com/embed/xpoWxFyGuC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<hr></a>
+
+<a name="sixth">
+  <center><h1>Adding CSS to Mega Project</h1></center> <br>
+<center><iframe width="760" height="360" src="https://www.youtube.com/embed/IZa8pbR8CWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+</a></div></div>
+<!-- </div> -->
+
+    
+    
+</body>
+</html>
