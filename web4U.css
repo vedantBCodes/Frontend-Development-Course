@@ -38,16 +38,14 @@ img {
   border-radius: 10px;
 }
 .atag a:hover {
-  color: red;
+  
   width: 200px;
-  background: darkgray;
   text-decoration: underline;
   border-radius: 10px;
 }
 .abc a:hover {
-  color: red;
+ 
   width: 200px;
-  background: burlywood;
   text-decoration: underline;
   border-radius: 10px;
 }
@@ -60,20 +58,6 @@ img {
 a {
   padding: 2px 5px;
 }
-/* summary:hover{color:red;
-    width:200px;
-    background: black;
-    text-decoration: underline;
-    border-radius: 10px;} */
-.flex-container1 a:hover {
-  color: red;
-  width: 200px;
-  padding: 1px 10px;
-  background: #c7b173;
-  text-decoration: underline;
-  border-radius: 10px;
-}
-/* a:visited{color:blue;} */
 .flex-container1 {
   /* background:burlywood ; */
   margin-top: 2px;
@@ -96,12 +80,12 @@ input {
   border-radius: 4px;
 }
 input[type="submit"] {
-  background-color: rgba(6, 6, 244, 0.71);
+  background-color: rgba(0, 0, 0, 0.71);
   color: white;
 }
 input[type="submit"]:hover {
   background-color: black;
-  padding: 5px 10px;
+  padding: 4px 5px;
 }
 #subscribe {
   padding-left: 100px;
@@ -195,7 +179,6 @@ center h2 {
   border-radius: 10px;
 }
 .hoverit a:hover {
-  color: red;
   text-decoration: underline;
   background-color: #c7b173;
   padding: 0px 10px;
@@ -216,7 +199,7 @@ center h2 {
   justify-content: space-between;
 }
 .footer img:hover {
-  background-color: aqua;
+  background-color: rgb(206, 222, 222);
 }
 .heading p {
   text-shadow: 2px 2px 2px black;
@@ -237,7 +220,23 @@ body {
   justify-content: space-around;
 }
 .footer a:hover {
-  color: red;
-  background-color: #dfd8e8;
   border-radius: 10px;
+  text-decoration: underline;
+}
+
+#actuallink{
+   color:green;
+}
+#actuallink:hover{
+  color:black;
+}
+.flex-container1 a{
+  color:green;
+}
+.flex-container1 a:hover{
+  color:black;
+  text-decoration: underline;
+}
+#YTvideo iframe{
+  width:"800px";
 }
