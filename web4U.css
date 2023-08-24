@@ -174,15 +174,17 @@ center h1 {
   border-radius: 10px;
 }
 center h2 {
-  background-color: #c7b173;
+  background-color: #e0daca;
   padding: 0px 0px;
   border-radius: 10px;
 }
+.hoverit a{
+  color:green;
+}
 .hoverit a:hover {
   text-decoration: underline;
-  background-color: #c7b173;
-  padding: 0px 10px;
-  border-radius: 10px;
+  color:black;
+  
 }
 .footer {
   border: 2px solid black;
