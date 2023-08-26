@@ -1,249 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Log In</title>
-    <!-- <link rel="stylesheet" href="web4U.css"> -->
-    <!--<style>
-        body{background-image: url(https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg);}
-        .form{border:3px solid black;
-             border-radius:10px;
-             align-content: center;
-             margin: 10px 300px 0px 300px;
-             width:750px;
-            font-size: 30px;}
-        input[type="email"]{border:5px solid black;
-            border-radius: 10px;
-              width:300px;
-            height:50px;}
-        input[type="password"]{border:5px solid black;
-            border-radius: 10px;
-              width:300px;
-            height:50px;}
-        input[type="checkbox"]{border:5px solid black;
-            border-radius: 10px;
-              width:30px;
-            height:30px;}
-        input[type="submit"]{border:5px solid black;
-            border-radius: 10px;
-              width:700px;
-            height:50px;
-            background-color: rgb(68, 160, 68);}
-  .heading{text-align: center;
-  color:white;
-  border:2px solid black;
-  border-radius:30px;
-  font-size:70px;
-  padding-left:130px;
-  padding-top:50px;
-  padding-bottom:50px;
-  padding-right:130px;
-  margin-top:0px;
-  margin-left:5px;
-  background-image: url(https://blog.openclassrooms.com/en/wp-content/uploads/sites/4/2018/03/web-develoment.jpg);
-  
-  background-size: cover;
-}
-.flex-container1 a{color:white;
-  text-decoration: underline;}
-a:hover{color:red;
-  text-decoration: underline;}
-/* a:visited{color:blue;} */
-.flex-container1{
-    margin-top: 2px;
-    background-color: brown;
-    border:2px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  border-radius:30px;
-  font-size: 20px;
-    display:flex;
-  flex-direction: row;
-justify-content: space-around;}
-    </style>-->
     <style>
-      body{font-family: roboto,sans-serif;
-    font-size: 30px;
-    padding: 0px;
-    margin: 2px;
-    /* background-image: url(https://egeniq.com/wp-content/uploads/2022/07/frontend_webdeveloper.jpg); */
-    }
-/* .flex-container{position:sticky;
-    top:10px;} */
-.heading{
-  position:sticky;
-  text-align: center;
-  color:white;
-  border:2px solid black;
-  border-radius:30px;
-  font-size:70px;
-  /* padding-left:130px; */
-  padding-top:50px;
-  padding-bottom:50px;
-  /* padding-right:130px; */
-  margin-top:0px;
-  /* margin-left:5px; */
-  background-image: url(https://blog.openclassrooms.com/en/wp-content/uploads/sites/4/2018/03/web-develoment.jpg);
-  
-  background-size: cover;
-  
-}
-.circle img{
-       border-radius: 10px;
-      padding-left: 0px;}
-img{border-radius: 10px;}
-.atag a:hover{color:red;
-  width:200px;
-  background:aqua;
-  text-decoration: underline;
-  border-radius: 10px;}
-.abc a:hover{color:red;
-  width:200px;
-  background:burlywood;
-  text-decoration: underline;
-  border-radius: 10px;}
-.flex-container1 a{color:black;
-  padding:5px 20px;
-  border-radius: 10px;
-  text-decoration: none;}
-  a{padding: 2px 5px;
-    }
-  /* summary:hover{color:red;
+      body {
+        font-family: roboto, sans-serif;
+        font-size: 30px;
+        padding: 0px;
+        margin: 2px;
+      }
+      .heading {
+        position: sticky;
+        text-align: center;
+        color: white;
+        border: 2px solid black;
+        border-radius: 30px;
+        font-size: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 0px;
+        background-image: url(https://blog.openclassrooms.com/en/wp-content/uploads/sites/4/2018/03/web-develoment.jpg);
+
+        background-size: cover;
+      }
+      .circle img {
+        border-radius: 10px;
+        padding-left: 0px;
+      }
+      img {
+        border-radius: 10px;
+      }
+      .atag a:hover {
+        color: red;
+        width: 200px;
+        background: aqua;
+        text-decoration: underline;
+        border-radius: 10px;
+      }
+      .abc a:hover {
+        color: red;
+        width: 200px;
+        background: burlywood;
+        text-decoration: underline;
+        border-radius: 10px;
+      }
+      .flex-container1 a {
+        color: black;
+        padding: 5px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      a {
+        padding: 2px 5px;
+      }
+      /* summary:hover{color:red;
     width:200px;
     background: black;
     text-decoration: underline;
     border-radius: 10px;} */
-    .flex-container1 a{
-      color:green;
-    }
-.flex-container1 a:hover{color:black;
-  width:200px;
-  padding: 1px 10px;
-  text-decoration: underline;
-  border-radius: 10px;}
-/* a:visited{color:blue;} */
-.flex-container1{
-  /* background:burlywood ; */
-    margin-top: 2px;
-    /* background-color: brown; */
-    border:2px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  border-radius:30px;
-  font-size: 20px;
-    display:flex;
-  flex-direction: column;
-justify-content: space-around;}
-input{
-color: #25265e; 
-    border:2px solid black;
-    padding:3px 5px;
-    font-size: 16px;
-    line-height: 24px;
-    border-radius: 4px;
-    }
-input[type="submit"]{background-color: rgba(6, 6, 244, 0.71);
-  color: white;}
-#subscribe{padding-left: 100px;
- font-size: 30px;}
- .flex-container4 img{
-    width:600px;
-     height: 400px;}
-p{text-indent: 100px;
-  margin-left: 50px;
-  margin-right: 50px;}
-a{text-decoration: none;}
-.center{margin-right: 0px;
-  margin-left: 10px;}
-  iframe{border:4px solid black;
-  border-radius: 10px;}
-.flex-container2{display: flex;
-   flex-direction: row;
-   font-size: 30px;}
-.flex-container5{display:flex;
-                flex-direction: row;}
-.flex-container1{width:200px;
-                height:600px;
-                position: sticky;
-              }
-body{background-color:rgb(242, 237, 230);} 
-.flex-container4{margin-left:0px;
-                padding-left: 10px;
-                padding-right:0px;
-               }
-               input[type="reset"]{background-color: rgb(69, 69, 192);}
-               input[type="submit"]:hover{background-color: black;}
-               input[type="reset"]:hover{background-color: black;}
-               input[type="reset"]{color: white;
-                                            width:100px;
-                                            height:40px;}
-                input[input="submit"]{color:white;
-                                      width:100px;
-                                    height:40px;}
-               /* input[type="checkbox"]{width:"30px"; height:"30px";} */
-               input[type="checkbox"]{border:5px solid black;
-            border-radius: 10px;
-              width:30px;
-            height:30px;}
+      .flex-container1 a {
+        color: green;
+      }
+      .flex-container1 a:hover {
+        color: black;
+        text-decoration: underline;
+        border-radius: 10px;
+      }
+      /* a:visited{color:blue;} */
+      .flex-container1 {
+        /* background:burlywood ; */
+        margin-top: 2px;
+        /* background-color: brown; */
+        border: 2px solid black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      input {
+        color: #25265e;
+        border: 2px solid black;
+        padding: 3px 5px;
+        font-size: 16px;
+        line-height: 24px;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: rgba(6, 6, 244, 0.71);
+        color: white;
+      }
+      #subscribe {
+        padding-left: 100px;
+        font-size: 30px;
+      }
+      .flex-container4 img {
+        width: 600px;
+        height: 400px;
+      }
+      p {
+        text-indent: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .center {
+        margin-right: 0px;
+        margin-left: 10px;
+      }
+      iframe {
+        border: 4px solid black;
+        border-radius: 10px;
+      }
+      .flex-container2 {
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+      }
+      .flex-container5 {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-container1 {
+        width: 200px;
+        height: 600px;
+        position: sticky;
+      }
+      body {
+        background-color: rgb(242, 237, 230);
+      }
+      .flex-container4 {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+      }
+      input[type="reset"] {
+        background-color: rgb(69, 69, 192);
+      }
+      input[type="submit"]:hover {
+        background-color: black;
+      }
+      input[type="reset"]:hover {
+        background-color: black;
+      }
+      input[type="reset"] {
+        color: white;
+        width: 100px;
+        height: 40px;
+      }
+      input[input="submit"] {
+        color: white;
+        width: 100px;
+        height: 40px;
+      }
+      input[type="checkbox"] {
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+      }
 
-
-
-/* h1{border: 5px solid black;
- border-radius: 10px;
- padding-left: 0px;
-padding-right: 0px;} */
-/* input{border:2px solid black;
-     border-collapse: collapse;}
-.flex-container1 a{border:2px solid black;
-                  padding:7px 20px;
-                  border-radius: 10px;} */
-.flex-container1{    flex-basis: calc(20% - 2px);
-  min-width: calc(15% - 2px);
-  /* z-index: 999 !important; */
-  /* overflow-y: auto; */
-  height: calc(100vh - 50px);
-  top:0px;
-background-color: antiquewhite;}
-body{margin: 0 px;
-    padding: 0px;}
-    .ex1{background-color:darkgray;
-      border-radius: 10px;
-    padding:2px;}
-  .ex2{background-color: antiquewhite;
-   border-radius: 10px;}
-   hr{border: 2px solid black;}
-   h1{text-shadow: 1px 1px 0px black;}
-   /* .flex-container4{: center;} */
-
+      .flex-container1 {
+        flex-basis: calc(20% - 2px);
+        min-width: calc(15% - 2px);
+        height: calc(100vh - 50px);
+        top: 0px;
+        background-color: antiquewhite;
+      }
+      body {
+        margin: 0 px;
+        padding: 0px;
+      }
+      .ex1 {
+        background-color: darkgray;
+        border-radius: 10px;
+        padding: 2px;
+      }
+      .ex2 {
+        background-color: antiquewhite;
+        border-radius: 10px;
+      }
+      hr {
+        border: 2px solid black;
+      }
+      h1 {
+        text-shadow: 1px 1px 0px black;
+      }
     </style>
-</head>
-<body>
-        <div class="heading">
-            <p><marquee behavior="alternate" direction="">WEB4U LEARNING AREA</marquee></p>
+  </head>
+  <body>
+    <div class="heading">
+      <p>
+        <marquee behavior="alternate" direction="">WEB4U LEARNING AREA</marquee>
+      </p>
+    </div>
+    <div class="flex-container5">
+      <div class="flex-container1">
+        <div>
+          <a href="web4U.html"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png"
+              width="20px"
+              height="20px"
+            />Home</a
+          >
         </div>
-        <div class="flex-container5">
-        <div class="flex-container1">
-            <div><a href="web4U.html"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" width="20px" height="20px">Home</a></div>
-            <div><a href="html.html" ><img src="htmllogo.png" alt="" width="20px" height="20px">HTML</a></div>
-            <div><a href="css.html" ><img src="csslogo.png" alt="" width="20px" height="20px">CSS</a></div>
-            <div><a href="js.html" ><img src="js.png" alt="" width="40px" height="20px">JS</a></div>
-            <div><a href="log_in.html" ><img src="login.png" alt="" width="20px" height="20px">LOG IN</a></div>
-        
+        <div>
+          <a href="html.html"
+            ><img src="htmllogo.png" alt="" width="20px" height="20px" />HTML</a
+          >
         </div>
-        <div class="flex-container4">
-<div class="form">
-  <center>
-    <h1>Please Log in to continue</h1> <hr>
-    <form action="abc.php">
-        <label for="username" >Enter your username or email:</label>
-        <input type="email" id="username" required placeholder="Username or Email">  <br> <br>
-        <label for="password" >Enter a Password:</label>
-        <input type="password" id="password" required placeholder="Password"> <br> <br> 
-        <input type="checkbox" id="remember">
-        <label for="remember">Remember me</label> <br> <br> 
-        <input type="submit" value="Sign in"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="reset">
-    </form></center>
-</div></div></div>
-    
-</body>
-</html>     
+        <div>
+          <a href="css.html"
+            ><img src="csslogo.png" alt="" width="20px" height="20px" />CSS</a
+          >
+        </div>
+        <div>
+          <a href="js.html"
+            ><img src="js.png" alt="" width="40px" height="20px" />JS</a
+          >
+        </div>
+        <div>
+          <a href="log_in.html"
+            ><img src="login.png" alt="" width="20px" height="20px" />LOG IN</a
+          >
+        </div>
+      </div>
+      <div class="flex-container4">
+        <div class="form">
+          <center>
+            <h1>Please Log in to continue</h1>
+            <hr />
+            <form action="abc.php">
+              <label for="username">Enter your username or email:</label>
+              <input
+                type="email"
+                id="username"
+                required
+                placeholder="Username or Email"
+              />
+              <br />
+              <br />
+              <label for="password">Enter a Password:</label>
+              <input
+                type="password"
+                id="password"
+                required
+                placeholder="Password"
+              />
+              <br />
+              <br />
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember me</label> <br />
+              <br />
+              <input type="submit" value="Sign in" />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="reset" />
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
